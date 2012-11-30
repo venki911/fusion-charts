@@ -1,0 +1,11 @@
+<h2>这是基本示例</h2>
+
+<!-- 
+ render_sm_chart(chart_id, chart_type, category, datasets, options = {}, chart_width = 700, chart_height = 500, show_total = false)
+-->
+
+<%= render_sm_chart("a", "Pie2D", ['a','b','c'], [1,2,3]) %>
+<%= render_sm_chart("b", "StackedColumn2D", ['a','b','c'], [{:seriesName => "se1", :color => "FF0000",:value_list => [1,2,3]}, {:seriesName => "se2", :color => "F660AB", :value_list => [3,4,5]}]) %>
+
+<%= render_sm_chart("c", "MSColumn3DLineDY", ['a','b','c'], [{:seriesName => "se1", :color => "FF0000",:value_list => [1,2,3]}, {:seriesName => "se2", :color => "F660AB", :value_list => [3,4,5]},{:seriesName => "se3", :color => "F660AC", :value_list => [7,8,9]}],{}, 500, 400, true) %>
+
